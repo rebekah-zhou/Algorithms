@@ -13,3 +13,6 @@ function capitalizeSentence(string) {
 }
 
 console.log(capitalizeSentence(testString3))
+
+
+// Amelia notes. 
