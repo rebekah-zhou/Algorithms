@@ -20,3 +20,56 @@ const arr = [
 // Board 
 // Players 
 // Logic how win is determined
+
+class TicTacToe {
+    constructor() {
+        this.player1 = {
+            name: "Player 1",
+            wins: 0,
+            losses: 0,
+            moves: [],
+            symbol: null
+        }
+        this.player2 = {
+            name: "Player 2",
+            wins: 0,
+            losses: 0,
+            moves: [],
+            symbol: null
+        }
+    }
+
+    createNewBoard() {
+        this.board = [
+            [null, null, null], 
+            [null, null, null],
+            [null, null, null]
+        ]
+    }
+
+    checkForWin(player) {
+        // only need to check when a player has made 3 moves
+        const possibleWins = [
+            [7, 8, 9],
+            [4, 5, 6],
+            [1, 2, 3],
+            [1, 4, 7],
+            [2, 5, 8], 
+            [3, 6, 9],
+            [1, 5, 9],
+            [3, 5, 7]
+        ]
+
+
+        // board[0][0], board[0][1], board[0][2]
+        return !!possibleWins.find(win => {
+            console.log(win)
+            console.log(player.moves)
+            console.log(win === player.moves)
+        })
+        
+    }
+}
+
+const tictactoe = new TicTacToe
+console.log(tictactoe.checkForWin({moves: [1, 2, 3]}))
