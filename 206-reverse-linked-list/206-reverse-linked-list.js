@@ -25,17 +25,14 @@ var reverseList = function(head) {
         
         prevNode = currNode
         currNode = nextNode
+         
         try {
             nextNode = nextNode.next
         } catch(e) {
-
+            
         }
 
     } while(currNode)
     
     return prevNode
 };
-
-// 2 3 4 5 1
-// 3 4 5 2 1 
-// 
