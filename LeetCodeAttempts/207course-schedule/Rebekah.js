@@ -8,7 +8,7 @@ const prerequisites = [[2,0], [0,1], [1,2], [2,3], [3,0], [0,3]]
 var canFinish = function(numCourses, prerequisites) {
 
     function checkTransitivity(firstNum, lastNum) {
-        prerequisites.find(prereq => [lastNum][firstNum]
+        prerequisites.find(prereq => [lastNum][firstNum])
     }
     
     function checkMatch(a, b) {

@@ -9,7 +9,7 @@ var longestCommonPrefix = function(strs) {
                     break;
                 } 
             }
-        }
+        })
     }
 
 }
